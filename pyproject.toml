@@ -1,0 +1,28 @@
+[project]
+# name is the module name that you use with `pip install`
+name = "python-module-example"
+version = "0.0.1"
+authors = [
+    { name="ZeroFlucs", email="devops@zeroflucs.io" },
+]
+description = "An example python module"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/zeroflucs-labs/python-module-example"
+Issues = "https://github.com/zeroflucs-labs/python-module-example/issues"
+
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
